@@ -20,7 +20,7 @@ app.post("/send-order", async (req, res) => {
   try {
     await transporter.sendMail({
       from: '"Commande Boutique" <' + process.env.EMAIL_USER + '>',
-      to: "vendeur@email.com", // à modifier
+      to: "mohamed.traore@lfaccra.com", // à modifier
       subject: "Nouvelle commande client",
       text: message
     });
